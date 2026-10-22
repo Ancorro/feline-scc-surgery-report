@@ -1,0 +1,249 @@
+<title>Feline SCC Surgery</title>
+<meta name="claude:viewport-fit-sides" content="cover">
+<meta name="build" content="1792631549">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600&display=swap">
+<style>
+/* Plain reading page: one column, one font, simple tables, no decoration. */
+:root { --bg: #fff; --fg: #222; --muted: #666; --line: #e3e3e3; --accent: #1a4f8a; color-scheme: light; }
+body { background: var(--bg); color: var(--fg); font: 16px/1.65 "Inter", system-ui, -apple-system, "Segoe UI", sans-serif; }
+.wrap { max-width: 1000px; margin: 0 auto; padding-block: 32px 64px;
+  padding-left: max(16px, env(safe-area-inset-left, 0px)); padding-right: max(16px, env(safe-area-inset-right, 0px)); }
+h1 { font-size: 1.7rem; font-weight: 600; margin: 0 0 6px; line-height: 1.25; }
+h2 { font-size: 1.3rem; font-weight: 600; margin: 0 0 16px; }
+h3 { font-size: 1.15rem; font-weight: 600; margin: 32px 0 10px; }
+h4 { font-size: 1rem; font-weight: 600; margin: 26px 0 8px; }
+p { margin: 0 0 14px; }
+ul { margin: 0 0 14px; padding-left: 1.3em; }
+li { margin-bottom: 4px; }
+.sub { color: var(--muted); margin-bottom: 20px; }
+.notice { font-size: .92rem; color: var(--muted); border-left: 2px solid var(--line); padding-left: 12px; margin: 0 0 28px; }
+nav ul { list-style: none; padding: 0; margin: 0 0 32px; display: flex; flex-wrap: wrap; gap: 4px 18px; border-bottom: 1px solid var(--line); padding-bottom: 10px; }
+nav li { margin: 0; }
+nav a { color: var(--muted); text-decoration: none; font-size: .95rem; }
+nav a:hover { color: var(--accent); }
+nav a[aria-current="page"] { color: var(--fg); font-weight: 600; }
+a { color: var(--accent); }
+.tbl { margin: 0 0 22px; }
+table { border-collapse: collapse; width: 100%; font-size: .92rem; border: 1px solid #cfd4da; overflow-wrap: break-word; }
+th, td { text-align: left; padding: 10px 12px; border: 1px solid #cfd4da; vertical-align: top; }
+th { font-weight: 600; background: #f3f5f7; }
+tbody tr:nth-child(even) td { background: #fafbfc; }
+table { table-layout: fixed; }
+td.n { font-variant-numeric: tabular-nums; }
+td.ref { font-size: .82rem; }
+table.facts th { background: #f3f5f7; font-weight: 600; color: var(--fg); font-size: .9rem; }
+
+.ref { color: var(--muted); font-size: .85em; }
+span.ref::before { content: "("; } span.ref::after { content: ")"; }
+.ref a { color: var(--accent); text-decoration: none; }
+.ref a:hover { text-decoration: underline; }
+.sources { margin-top: 36px; border-top: 1px solid var(--line); padding-top: 14px; }
+.sources h3 { margin-top: 0; font-size: .9rem; color: var(--muted); }
+.sources ol { margin: 0; padding-left: 1.6em; font-size: .88rem; color: var(--muted); }
+.sources li { margin-bottom: 4px; }
+.pager { display: flex; justify-content: space-between; margin-top: 32px; font-size: .95rem; }
+.pager a { text-decoration: none; }
+footer { margin-top: 40px; font-size: .85rem; color: var(--muted); }
+section[hidden] { display: none; }
+@media (max-width: 640px) {
+  table, thead, tbody, tr, th, td { display: block; width: 100%; box-sizing: border-box; }
+  table { border: 0; }
+  colgroup { display: none; }
+  thead { position: absolute; left: -9999px; }
+  tr { border: 1px solid #cfd4da; border-radius: 4px; margin-bottom: 12px; }
+  td, th { border: 0; border-bottom: 1px solid #e3e3e3; padding: 8px 10px; }
+  tr > :last-child { border-bottom: 0; }
+  tbody tr:nth-child(even) td { background: #fff; }
+  td[data-h]::before { content: attr(data-h); display: block; font-size: .75rem; font-weight: 600; color: var(--muted); margin-bottom: 2px; }
+  table.facts th { background: #f3f5f7; }
+  table.facts td[data-h]::before { display: none; }
+}
+
+.opts { margin: 0 0 20px; }
+.opts dt { font-weight: 600; margin-top: 14px; }
+.opts dd { margin: 4px 0 0; }
+.opts dd b { font-weight: 600; }
+</style>
+
+<div class="wrap">
+<h1>Surgery for Oral Squamous Cell Carcinoma in Cats</h1>
+<p class="sub">What maxillectomy and mandibulectomy achieve, what they cost the cat, which cats are candidates, and what untreated cats face. Updated 21 October 2026.</p>
+<p class="notice">This is a short report built from two retrospective studies, two PubMed abstracts and one trial flyer. It is not veterinary advice; every surgical decision depends on the individual cat's imaging, staging and anesthetic fitness.</p>
+
+<nav aria-label="Pages"><ul>
+  <li><a href="#overview" data-page="overview">Overview</a></li>
+  <li><a href="#untreated" data-page="untreated">Untreated cats</a></li>
+  <li><a href="#outcomes" data-page="outcomes">Surgical outcomes</a></li>
+  <li><a href="#candidates" data-page="candidates">Candidates and alternatives</a></li>
+  <li><a href="#sources" data-page="sources">Sources</a></li>
+</ul></nav>
+
+<section id="overview" data-page="overview">
+  <h2>Overview</h2>
+  <p>Complete surgical removal is the only treatment in these sources under which most cats with oral squamous cell carcinoma (SCC, a cancer of the lining cells of the mouth) lived beyond a year. Cats with SCC treated by maxillectomy (removal of part of the upper jaw) had one-year and two-year survival rates of 83 percent, and the median survival time was not reached. <span class="ref">[1]</span> Cats treated by mandibulectomy (removal of part of the lower jaw) did worse, with a median survival time of 217 days for SCC, but still far better than untreated cats. <span class="ref">[1, 3]</span> Untreated or palliatively treated cats had median survival times of 44 to 45 days and a one-year survival of about 9.5 percent. <span class="ref">[2, 4]</span></p>
+  <p>The price of surgery is a high rate of short-term complications. More than half of the maxillectomy cats had a post-operative complication, most often difficulty eating or wound breakdown, but almost all of these resolved within about two weeks and every cat returned to eating on its own. <span class="ref">[1]</span> After mandibulectomy, 72 percent of cats could not eat normally right after surgery and 12 percent never regained the ability to eat. <span class="ref">[3]</span></p>
+  <p>Surgery is only an option for a minority of cats. The maxillectomy cohort had small tumours, with a median largest dimension of 2.0 cm for SCC, and no cat had metastasis to the lungs on pre-operative imaging. <span class="ref">[1]</span> The authors warn that the good results for SCC probably reflect selection of smaller, less diffuse tumours and may not apply to larger ones. <span class="ref">[1]</span></p>
+  <h3>Survival by treatment group</h3>
+  <p>The table groups cats by the situation they were in. Figures from different studies are not directly comparable, because each study selected cats differently.</p>
+  <div class="tbl"><table>
+    <colgroup><col style="width:26%"><col style="width:16%"><col style="width:58%"></colgroup>
+    <thead><tr><th>Cats and treatment</th><th>Survival</th><th>What the study found</th></tr></thead>
+    <tbody>
+      <tr><td data-h="Cats and treatment">Thirteen cats with maxillary SCC treated by maxillectomy, from a 60-cat multi-centre series</td><td class="n" data-h="Survival">83 percent at one and two years</td><td data-h="What the study found">The median survival time was not reached, local recurrence occurred in 15.4 percent of SCC cats and metastasis in 15.4 percent. <span class="ref">[1]</span></td></tr>
+      <tr><td data-h="Cats and treatment">Cats with mandibular SCC treated by mandibulectomy, within a 42-cat series</td><td class="n" data-h="Survival">Median 217 days</td><td data-h="What the study found">Cats with SCC had significantly shorter survival than cats with fibrosarcoma or osteosarcoma, and one-year and two-year survival rates for SCC were both 43 percent. <span class="ref">[1, 3]</span></td></tr>
+      <tr><td data-h="Cats and treatment">Fifty-two cats in New Zealand with oral SCC given only palliative care such as anti-inflammatories or antibiotics</td><td class="n" data-h="Survival">Median 45 days</td><td data-h="What the study found">Cats biopsied with the aim of a surgical cure were excluded, so this cohort describes cats who were not operated on. <span class="ref">[2]</span></td></tr>
+      <tr><td data-h="Cats and treatment">Fifty-four cats in United Kingdom general practice with oral SCC</td><td class="n" data-h="Survival">Median 44 days</td><td data-h="What the study found">One-year survival was 9.5 percent, and cats given a non-steroidal anti-inflammatory drug after diagnosis had a hazard ratio for death of 0.46. <span class="ref">[4]</span></td></tr>
+    </tbody>
+  </table></div>
+  <div class="sources" data-refs="1 2 3 4"></div>
+</section>
+
+<section id="untreated" data-page="untreated">
+  <h2>What untreated cats face</h2>
+  <p>Two independent cohorts agree that cats whose oral SCC is not removed live about six weeks after diagnosis. A New Zealand series of 52 cats that received at most palliative treatment had an estimated median survival time of 45 days, with a 95 percent confidence interval of 29.9 to 60.1 days. <span class="ref">[2]</span> A United Kingdom general-practice series of 54 cats had a median survival time of 44 days and a one-year survival of 9.5 percent. <span class="ref">[4]</span></p>
+  <p>Where the tumour sits in the mouth changes the outlook for untreated cats. Cats with tumours of the oropharynx (the back of the throat) lived a median of 151 days, which was significantly longer than cats with maxillary tumours at 51 days, sublingual tumours (under the tongue) at 33 days, and mandibular tumours at 34 days. <span class="ref">[2]</span> Age, sex and the presence of bone in the biopsy sample did not predict survival. <span class="ref">[2]</span></p>
+  <h3>Survival of palliatively treated cats by tumour location</h3>
+  <p>All rows come from the same 52-cat New Zealand series, so they are directly comparable. <span class="ref">[2]</span></p>
+  <div class="tbl"><table>
+    <colgroup><col style="width:28%"><col style="width:14%"><col style="width:22%"><col style="width:36%"></colgroup>
+    <thead><tr><th>Tumour location</th><th>Cats</th><th>Median survival</th><th>Comparison with the oropharynx</th></tr></thead>
+    <tbody>
+      <tr><td data-h="Tumour location">Oropharynx</td><td class="n" data-h="Cats">7</td><td class="n" data-h="Median survival">151 days</td><td data-h="Comparison with the oropharynx">This was the reference group with the longest survival. <span class="ref">[2]</span></td></tr>
+      <tr><td data-h="Tumour location">Maxilla (upper jaw)</td><td class="n" data-h="Cats">21</td><td class="n" data-h="Median survival">51 days</td><td data-h="Comparison with the oropharynx">Survival was significantly shorter, with a P value of 0.017. <span class="ref">[2]</span></td></tr>
+      <tr><td data-h="Tumour location">Sublingual (under the tongue)</td><td class="n" data-h="Cats">12</td><td class="n" data-h="Median survival">33 days</td><td data-h="Comparison with the oropharynx">Survival was significantly shorter, with a P value of 0.011. <span class="ref">[2]</span></td></tr>
+      <tr><td data-h="Tumour location">Mandible (lower jaw)</td><td class="n" data-h="Cats">12</td><td class="n" data-h="Median survival">34 days</td><td data-h="Comparison with the oropharynx">Survival was significantly shorter, with a P value of 0.029. <span class="ref">[2]</span></td></tr>
+    </tbody>
+  </table></div>
+  <p>A tissue marker also predicted survival in untreated cats. Tumours with intense p16 protein immunostaining (a laboratory stain for the p16 cell-cycle protein) had a median survival time of 87 days, significantly longer than the 37 days for tumours with only peripheral p16 staining. <span class="ref">[2]</span> Staining for the p53 protein was not prognostic. <span class="ref">[2]</span> Both studies measured survival mostly as time to euthanasia, which owners decide for many reasons, so the figures carry extra variability. <span class="ref">[2]</span></p>
+  <p>The United Kingdom study also found that cats given a non-steroidal anti-inflammatory drug after diagnosis had about half the hazard of death, with a hazard ratio of 0.46 and a confidence interval of 0.21 to 0.98, and the authors could not say whether this reflected pain relief, an anticancer effect, or both. <span class="ref">[4]</span></p>
+  <div class="sources" data-refs="2 4"></div>
+</section>
+
+<section id="outcomes" data-page="outcomes">
+  <h2>Surgical outcomes and complications</h2>
+  <p>The largest surgical series is a multi-centre retrospective study of 60 cats treated by maxillectomy at 14 referral hospitals between 1992 and 2016, of which 13 had SCC. <span class="ref">[1]</span> The comparison for the lower jaw is a 42-cat mandibulectomy series from eight institutions published in 2006, which the maxillectomy authors use as their benchmark. <span class="ref">[1, 3]</span></p>
+  <h3>Maxillectomy: survival and tumour control</h3>
+  <div class="tbl"><table class="facts"><colgroup><col style="width:22%"><col style="width:78%"></colgroup><tbody>
+    <tr><th>Who was studied</th><td>Sixty cats with a median age of 10.5 years had a maxillectomy for a biopsy-confirmed upper-jaw tumour, with at least three months of follow-up; 41 tumours were malignant and 13 were SCC. <span class="ref">[1]</span></td></tr>
+    <tr><th>Tumour size</th><td>The median largest tumour dimension was 1.6 cm overall and 2.0 cm for SCC, with a range of 0.7 to 3.8 cm for SCC. <span class="ref">[1]</span></td></tr>
+    <tr><th>Survival for SCC</th><td>One-year and two-year survival rates were both 83 percent, the median survival time was not reached, and survival times ranged from 23 to 2657 days. <span class="ref">[1]</span></td></tr>
+    <tr><th>Local recurrence</th><td>Recurrence occurred in 18.3 percent of all cats, in 11.1 percent of cats with complete histologic excision and in 31.2 percent with incomplete excision; among SCC cats it was 15.4 percent. <span class="ref">[1]</span></td></tr>
+    <tr><th>Metastasis</th><td>Only two cats, both with SCC, developed metastasis after surgery, to the regional lymph nodes in both and the lungs in one. <span class="ref">[1]</span></td></tr>
+    <tr><th>Prognostic factors</th><td>Local recurrence raised the hazard of death more than six-fold, adjuvant chemotherapy was associated with shorter survival, which the authors attribute to selection bias, and a higher mitotic index predicted shorter progression-free interval in malignant tumours. <span class="ref">[1]</span></td></tr>
+  </tbody></table></div>
+  <h3>Maxillectomy: complications</h3>
+  <div class="tbl"><table class="facts"><colgroup><col style="width:22%"><col style="width:78%"></colgroup><tbody>
+    <tr><th>During surgery</th><td>Ten cats (16.7 percent) had an intra-operative complication, namely blood loss, low blood pressure or inadvertent compromise of the tumour capsule. <span class="ref">[1]</span></td></tr>
+    <tr><th>After surgery</th><td>Thirty-four cats (56.7 percent) had a post-operative complication, most often reduced appetite or difficulty eating (20 percent) and wound dehiscence or an oronasal fistula, meaning an opening between mouth and nose (20 percent). <span class="ref">[1]</span></td></tr>
+    <tr><th>Other complications</th><td>Lip trauma from the opposing lower canine tooth occurred in 15 percent, nosebleed in 11.7 percent, and incisional swelling in 5 percent; one cat was euthanised 23 days after surgery because of flap necrosis. <span class="ref">[1]</span></td></tr>
+    <tr><th>Eating and feeding tubes</th><td>The median duration of eating difficulty was 7 days, nine cats (15 percent) had an esophagostomy feeding tube for a median of 9 days, and all cats returned to voluntary eating. <span class="ref">[1]</span></td></tr>
+    <tr><th>Duration</th><td>Only one cat had a complication lasting longer than 15 days, so the authors suggest a feeding tube need not be placed routinely at the time of maxillectomy. <span class="ref">[1]</span></td></tr>
+  </tbody></table></div>
+  <h3>Mandibulectomy, for comparison</h3>
+  <p>Mandibulectomy carries a heavier functional cost. In the 42-cat series, 72 percent of cats were dysphagic or inappetent immediately after surgery, 12 percent never regained the ability to eat, acute morbidity occurred in 98 percent and long-term morbidity in 76 percent of cats. <span class="ref">[3]</span> Even so, 83 percent of the 30 owners who gave information were satisfied with the outcome. <span class="ref">[3]</span> Cats with SCC had a median survival time of 217 days and one-year survival of 43 percent, and the local recurrence rate for SCC after mandibulectomy was 38.1 percent, compared with 7.7 percent as a cause of death in SCC cats after maxillectomy. <span class="ref">[1, 3]</span> Feeding tubes were used in 40.5 percent of mandibulectomy cats for a median of 74 days, against 15 percent of maxillectomy cats for a median of 9 days. <span class="ref">[1]</span></p>
+  <h3>Comparing the two procedures</h3>
+  <p>The columns are the same in each row, but the two series were run by different groups in different decades, so the comparison is indicative rather than controlled. <span class="ref">[1]</span></p>
+  <div class="tbl"><table>
+    <colgroup><col style="width:24%"><col style="width:38%"><col style="width:38%"></colgroup>
+    <thead><tr><th>Measure</th><th>Maxillectomy, 60 cats, 13 with SCC</th><th>Mandibulectomy, 42 cats</th></tr></thead>
+    <tbody>
+      <tr><td data-h="Measure">Survival for SCC</td><td data-h="Maxillectomy">One-year and two-year survival were 83 percent, and the median was not reached. <span class="ref">[1]</span></td><td data-h="Mandibulectomy">The median survival time was 217 days, and one-year survival was 43 percent. <span class="ref">[1, 3]</span></td></tr>
+      <tr><td data-h="Measure">Any post-operative complication</td><td data-h="Maxillectomy">Complications occurred in 56.7 percent of cats, almost all resolving within 15 days. <span class="ref">[1]</span></td><td data-h="Mandibulectomy">Acute morbidity occurred in 98 percent of cats and long-term morbidity in 76 percent. <span class="ref">[3]</span></td></tr>
+      <tr><td data-h="Measure">Eating after surgery</td><td data-h="Maxillectomy">Twenty percent had eating difficulty for a median of 7 days, and all returned to voluntary eating. <span class="ref">[1]</span></td><td data-h="Mandibulectomy">Seventy-two percent could not eat normally at first, and 12 percent never ate voluntarily again. <span class="ref">[3]</span></td></tr>
+      <tr><td data-h="Measure">Feeding tube</td><td data-h="Maxillectomy">Fifteen percent had a tube for a median of 9 days. <span class="ref">[1]</span></td><td data-h="Mandibulectomy">About 40.5 percent had a tube for a median of 74 days. <span class="ref">[1]</span></td></tr>
+      <tr><td data-h="Measure">Local recurrence for SCC</td><td data-h="Maxillectomy">Recurrence was reported in 15.4 percent of SCC cats. <span class="ref">[1]</span></td><td data-h="Mandibulectomy">Recurrence was reported in 38.1 percent of SCC cats. <span class="ref">[1]</span></td></tr>
+    </tbody>
+  </table></div>
+  <div class="sources" data-refs="1 3"></div>
+</section>
+
+<section id="candidates" data-page="candidates">
+  <h2>Which cats are candidates, and what else exists</h2>
+  <p>Surgery is offered to cats whose tumour can be removed with a margin of normal tissue and who have no evidence of spread. In the maxillectomy series, every cat had a biopsy or cytology diagnosis before surgery, 52 of 60 had chest imaging with no lung metastasis found, and lymph node imaging or sampling in 43 cats showed no spread before surgery. <span class="ref">[1]</span> Forty cats had a computed tomography (CT) scan of the head, which is what the surgeons used to plan the resection. <span class="ref">[1]</span> The tumours were small, with a median largest dimension of 2.0 cm for SCC and nothing over 3.8 cm. <span class="ref">[1]</span></p>
+  <p>The authors conclude that maxillectomy is a viable option for cats with resectable, non-metastatic maxillary tumours, and they explicitly caution that the SCC results may reflect a selection bias for smaller and less diffuse tumours. <span class="ref">[1]</span> Complete excision matters: recurrence was 11.1 percent after complete excision and 31.2 percent after incomplete excision, and the authors recommend surgical revision or radiation rather than chemotherapy when margins are incomplete. <span class="ref">[1]</span></p>
+  <p>Among untreated cats the most common sites were the maxillary gingiva (40 percent) and the sublingual region and mandible (23 percent each), and sublingual tumours had the shortest survival of any site. <span class="ref">[2]</span> Neither paper reports how many cats presenting with oral SCC turn out to be resectable, so no proportion is given here.</p>
+  <h3>Practical points for an owner</h3>
+  <div class="tbl"><table class="facts"><colgroup><col style="width:22%"><col style="width:78%"></colgroup><tbody>
+    <tr><th>Workup before surgery</th><td>The surgical series relied on biopsy or cytology of the mass, blood tests, chest imaging and in most cats a head CT; lymph nodes were sampled in only a quarter of cats, which the authors list as a limitation. <span class="ref">[1]</span></td></tr>
+    <tr><th>Where it is done</th><td>The 60 maxillectomies were performed at 14 veterinary referral hospitals in North America and Europe, which indicates the procedure is a referral-level operation rather than general practice surgery. <span class="ref">[1]</span></td></tr>
+    <tr><th>Cost</th><td>None of the sources reports the cost of maxillectomy or mandibulectomy, so no figure is given here.</td></tr>
+    <tr><th>Feeding tube</th><td>After maxillectomy a tube was needed in 15 percent of cats for about nine days, whereas after mandibulectomy 40.5 percent needed one for a median of 74 days. <span class="ref">[1]</span></td></tr>
+    <tr><th>Aftercare at home</th><td>Owners should expect reduced appetite for about a week, possible lip trauma from the lower canine tooth, and occasional nosebleeds, most of which were managed without further surgery. <span class="ref">[1]</span></td></tr>
+  </tbody></table></div>
+  <h3>Non-surgical options named in the sources</h3>
+  <p>For cats whose tumour cannot be removed, the maxillectomy authors summarise published median survival times of 60 to 174 days with palliative radiation, 86 days with an accelerated radiation protocol, 130 to 160 days with accelerated radiation plus carboplatin, 106 days with stereotactic radiation and 123 days with toceranib phosphate. <span class="ref">[1]</span> These figures are quoted from their review of other studies, which this report did not verify individually.</p>
+  <p>One investigational option appears in the handoff material. The University of Illinois announced a funded trial of intratumoral bio-adhesive nanoparticles carrying the chemotherapy drug exatecan for dogs and cats with soft-tissue-predominant oral SCC, given every three weeks for up to four treatments. <span class="ref">[5]</span></p>
+  <div class="tbl"><table class="facts"><colgroup><col style="width:22%"><col style="width:78%"></colgroup><tbody>
+    <tr><th>Who is eligible</th><td>Cats over one year old with a cytologic or histologic diagnosis of oral SCC that is predominantly soft tissue, preferably under the tongue, on the lip or on the gum line, in good condition with no other serious illness. <span class="ref">[5]</span></td></tr>
+    <tr><th>Who is excluded</th><td>Cats with previous chemotherapy, radiation or immunotherapy, untreated comorbid conditions, or poor anesthetic fitness. <span class="ref">[5]</span></td></tr>
+    <tr><th>What the trial covers</th><td>The trial pays for feeding tube placement, recheck bloodwork, the injections, biopsy and magnetic resonance imaging under anesthesia; owners pay for supportive medications and unrelated conditions. <span class="ref">[5]</span></td></tr>
+    <tr><th>Contact</th><td>The flyer names the clinical trials coordinator, Rebecca Kamerer, at (217) 300-6453 or rmoss81@illinois.edu. <span class="ref">[5]</span></td></tr>
+    <tr><th>Status caveat</th><td>On 21 October 2026 the flyer's original web address returned a not-found error and the trial was absent from both Illinois clinical-trials listings, so an owner should phone to confirm it is still enrolling before travelling. <span class="ref">[5, 6]</span></td></tr>
+  </tbody></table></div>
+  <div class="sources" data-refs="1 2 5 6"></div>
+</section>
+
+<section id="sources" data-page="sources">
+  <h2>Sources</h2>
+  <ol id="reflist" style="padding-left:1.6em;font-size:.92rem">
+    <li id="r1" data-label="Liptak et al. 2021">Liptak JM, Thatcher GP, Mestrinho LA, et al. <a href="https://doi.org/10.1111/vco.12634">Outcomes of cats treated with maxillectomy: 60 cases. A Veterinary Society of Surgical Oncology retrospective study</a>. Veterinary and Comparative Oncology 2021;19:1–10.</li>
+    <li id="r2" data-label="Munday et al. 2019">Munday JS, He Y, Aberdein D, Klobukowska HJ. <a href="https://doi.org/10.1016/j.tvjl.2019.04.007">Increased p16CDKN2A, but not p53, immunostaining is predictive of longer survival time in cats with oral squamous cell carcinomas</a>. The Veterinary Journal 2019;248:64–70.</li>
+    <li id="r3" data-label="Northrup et al. 2006">Northrup NC, Selting KA, Rassnick KM, et al. <a href="https://pubmed.ncbi.nlm.nih.gov/16960038/">Outcomes of cats with oral tumors treated with mandibulectomy: 42 cases</a>. Journal of the American Animal Hospital Association 2006;42:350–360. Abstract checked on PubMed; figures beyond the abstract are as quoted by Liptak et al. 2021.</li>
+    <li id="r4" data-label="Hayes et al. 2007">Hayes AM, Adams VJ, Scase TJ, Murphy S. <a href="https://pubmed.ncbi.nlm.nih.gov/17559521/">Survival of 54 cats with oral squamous cell carcinoma in United Kingdom general practice</a>. Journal of Small Animal Practice 2007;48:394–399. Abstract checked on PubMed.</li>
+    <li id="r5" data-label="Illinois trial flyer">University of Illinois College of Veterinary Medicine. <a href="sources/illinois-nanoparticle-trial-flyer.pdf">Funded study: intratumoral bio-adhesive nanoparticles containing chemotherapy for cytoreduction of squamous cell carcinoma in pet dogs and cats</a>, trial announcement flyer, copy held in this repository because the original address no longer resolves.</li>
+    <li id="r6" data-label="Illinois clinical trials listing">University of Illinois College of Veterinary Medicine. <a href="https://vetmed.illinois.edu/research/clinical-trials/">Clinical trials</a>, checked 21 October 2026; no squamous cell carcinoma trial was listed.</li>
+  </ol>
+</section>
+
+<div class="pager" id="pager"></div>
+<footer>Each citation links to its source; the full list is on the Sources page.</footer>
+</div>
+<script>
+(function(){
+  var order=['overview','untreated','outcomes','candidates','sources'];
+  var labels={overview:'Overview',untreated:'Untreated cats',outcomes:'Surgical outcomes',candidates:'Candidates and alternatives',sources:'Sources'};
+  var secs=document.querySelectorAll('section[data-page]');
+  var links=document.querySelectorAll('nav a[data-page]');
+  var pager=document.getElementById('pager');
+  // Turn every bracketed citation like [3, 17] into named links that open the source itself.
+  var hrefOf={}, labelOf={};
+  document.querySelectorAll('#reflist li[id^="r"]').forEach(function(li){ var a=li.querySelector('a[href]'); var n=li.id.slice(1); hrefOf[n]=a?a.href:('#'+li.id); labelOf[n]=li.dataset.label||('source '+n); });
+  function linkify(node){
+    node.innerHTML=node.innerHTML.replace(/\[([\d,\s]+)\]/g,function(m,inner){
+      return inner.split(',').map(function(x){ var n=x.trim(); if(!hrefOf[n]) return n; return '<a href="'+hrefOf[n]+'" target="_blank" rel="noopener">'+labelOf[n]+'</a>'; }).join('; ');
+    });
+  }
+  document.querySelectorAll('span.ref, td.ref, p.ref').forEach(function(el){
+    if(el.tagName==='TD' && !/\[/.test(el.textContent)) el.innerHTML='['+el.innerHTML+']';
+    linkify(el);
+  });
+  // Fill each page's "Sources" box from the master list.
+  document.querySelectorAll('.sources[data-refs]').forEach(function(box){
+    var nums=box.dataset.refs.split(' ');
+    var h=document.createElement('h3'); h.textContent='Sources on this page'; box.appendChild(h);
+    var ol=document.createElement('ol');
+    nums.forEach(function(n){ var src=document.getElementById('r'+n); if(!src) return; var li=document.createElement('li'); li.value=n; li.innerHTML=src.innerHTML; ol.appendChild(li); });
+    box.appendChild(ol);
+  });
+  function show(pg){
+    if(order.indexOf(pg)<0) pg='overview';
+    secs.forEach(function(s){ s.hidden = s.dataset.page!==pg; });
+    links.forEach(function(a){ if(a.dataset.page===pg) a.setAttribute('aria-current','page'); else a.removeAttribute('aria-current'); });
+    var i=order.indexOf(pg), prev=order[i-1], next=order[i+1];
+    pager.innerHTML=(prev?'<a href="#'+prev+'">← '+labels[prev]+'</a>':'<span></span>')+(next?'<a href="#'+next+'">'+labels[next]+' →</a>':'<span></span>');
+  }
+  function fromHash(){ var h=(location.hash||'').replace('#',''); var el=document.getElementById(h); var pg=el&&el.closest('section[data-page]')?el.closest('section[data-page]').dataset.page:h; show(pg); if(el&&h!==pg) el.scrollIntoView(); else window.scrollTo(0,0); }
+  window.addEventListener('hashchange', fromHash);
+  document.addEventListener('click', function(e){ var a=e.target.closest('a[href^="#"]'); if(!a) return; var h=a.getAttribute('href').slice(1); e.preventDefault(); if(location.hash==='#'+h) fromHash(); else location.hash=h; });
+  fromHash();
+  // Reload open tabs when a newer build is published (GitHub Pages copy only).
+  var build=(document.querySelector('meta[name="build"]')||{}).content;
+  if(build && location.protocol.indexOf('http')===0 && location.hostname.indexOf('github.io')>0){
+    setInterval(function(){
+      fetch(location.pathname+'?_='+Date.now(),{cache:'no-store'}).then(function(r){return r.text();}).then(function(t){
+        var m=t.match(/<meta name="build" content="(\d+)">/); if(m&&m[1]!==build) location.reload();
+      }).catch(function(){});
+    },120000);
+  }
+})();
+</script>
